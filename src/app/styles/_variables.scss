@@ -1,0 +1,54 @@
+@use '@styles/helpers' as *;
+
+:root {
+	--color-primary: #e53935;
+	--color-accent: #ff6f61;
+
+	--color-secondary: #fb8c00;
+	--color-secondary-light: #ffa726;
+
+	--color-warning: #fdd835;
+	--color-info: #ffeb3b;
+	--color-success: #43a047;
+	--color-success-light: #66bb6a;
+
+	--color-bg: #fafafa;
+	--color-bg-alt: #fff3e0;
+	--color-surface: #fbe9e7;
+
+	--color-text: #795548;
+	--color-text-muted: #a1887f;
+
+	--color-border: #eceff1;
+
+	--container-width: #{rem(1600)};
+	--container-padding-x: #{rem(16)};
+
+	--container-width: ;
+	--container-padding: ;
+	--section-padding: ;
+	--border-radius: ;
+	--border: ;
+
+	--transition-duration: 0.2s;
+	--transition-duration-slow: 0.8s;
+	--transition-duration-fast: ;
+	--transition-function: ; // cubic-bezier или ease-in-out
+
+	--font-family-base: 'Roboto', sans-serif;
+	--font-size-base: ;
+	--font-size-heading: ;
+	--font-size-small: ;
+	--line-height-base: ;
+	--letter-spacing-base: ;
+
+	--spacing-xs: ;
+	--spacing-sm: ;
+	--spacing-md: ;
+	--spacing-lg: ;
+	--spacing-xl: ;
+
+	@include laptop {
+		--container-width: #{rem(1280)};
+	}
+}

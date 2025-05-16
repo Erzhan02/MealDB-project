@@ -1,0 +1,18 @@
+.header {
+	background-color: var(--color-bg-alt);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+li {
+	list-style: none;
+}

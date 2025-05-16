@@ -16,11 +16,20 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, 'src'),
-			'@pages': path.resolve(__dirname, 'src/pages'),
-			'@app': path.resolve(__dirname, 'src/app'),
-			'@components': path.resolve(__dirname, 'src/components'),
 			'@icons': path.resolve(__dirname, 'icons'),
 			'@images': path.resolve(__dirname, 'images'),
+			'@styles': path.resolve(__dirname, 'src/app/styles'),
+		},
+	},
+
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `
+          @use "@styles/helpers/_index.scss" as *;
+          @use "@styles/_main.scss" as *;
+        `,
+			},
 		},
 	},
 });
